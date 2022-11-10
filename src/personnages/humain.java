@@ -6,13 +6,13 @@ public class humain {
 	private int argent;
 	private String boisson;
 	
-	public humain(string nom, int argent, string boisson) {
+	public humain(String nom, int argent, String boisson) {
 		this.nom = nom;
 		this.argent = argent;
 		this.boisson = boisson;
 	}
 	
-	public void parler(string texte) {
+	public void parler(String texte) {
 		System.out.println("("+this.nom+")-"+texte);
 	}
 	
@@ -21,15 +21,15 @@ public class humain {
 	}
 	
 	public void boire() {
-		parler("hum, un bon verre de "+this.boisson" !GLOUPS!");
+		parler("hum, un bon verre de "+this.boisson+" ! gloups !");
 		
 	}
 
-	public string getNom() {
+	public String getNom() {
 		return nom;
 	}
 
-	public void setNom(string nom) {
+	public void setNom(String nom) {
 		this.nom = nom;
 	}
 
@@ -41,11 +41,11 @@ public class humain {
 		this.argent = argent;
 	}
 
-	public string getBoisson() {
+	public String getBoisson() {
 		return boisson;
 	}
 
-	public void setBoisson(string boisson) {
+	public void setBoisson(String boisson) {
 		this.boisson = boisson;
 	}
 	
