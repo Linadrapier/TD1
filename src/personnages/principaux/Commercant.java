@@ -1,23 +1,25 @@
 package personnages.principaux;
 import personnages.humain;
 
-public class Commercant1 extends humain{
-	
-	public Commercant1(String nom, int argent) {
-		super(nom, argent);
-		// TODO Auto-generated constructor stub
+public class Commercant  extends humain{
+	Commercant (String nom, int argent) {
+		super(nom, argent, "thé");
 	}
-
-	public Commercant (String nom, int argent){
-		
-		this.nom=nom;
-		
-		
+	public int seFaireExtorquer() {
+		int n=getArgent();
+		perdreArgent(n);
+		parler("J'ai tout perdu : Le monde est injuste !");
+		return n;
+				
 	}
 	
-	void seFaireExtorquer() {
-		this.setArgent(0);
+	public void recevoir(int n) {
+		gagnerArgent(n);
+		
 	}
+	
+	
+		
 	
 
 }

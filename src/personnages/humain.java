@@ -12,6 +12,8 @@ public class humain {
 		this.boisson = boisson;
 	}
 	
+	
+
 	public void parler(String texte) {
 		System.out.println("("+this.nom+")-"+texte);
 	}
@@ -49,11 +51,11 @@ public class humain {
 		this.boisson = boisson;
 	}
 	
-	void gagnerArgent(int n) {
+	protected void gagnerArgent(int n) {
 		this.argent+=n;
 					
 	}
-	void perdreArgent(int n) {
+	public void perdreArgent(int n) {
 		this.argent-=n;
 					
 	}
